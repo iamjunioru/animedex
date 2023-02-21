@@ -29,8 +29,8 @@ export class Provider extends Component {
       .then(res => {
         const value = res.data.data;
         this.setState({
-          anime_id: 13
-          //anime_list: value
+          // anime_id: value.id,
+          anime_list: value
         });
       })
       .catch(function(error) {

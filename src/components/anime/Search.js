@@ -4,12 +4,12 @@ import { Consumer } from "../../context";
 
 class Search extends Component {
   state = {
-    text: ""
+    text: "",
   };
 
-  handleChange = event => {
+  handleChange = (event) => {
     this.setState({
-      [event.target.name]: event.target.value
+      [event.target.name]: event.target.value,
     });
   };
 
@@ -17,14 +17,14 @@ class Search extends Component {
     event.preventDefault();
     axios
       .get(`https://kitsu.io/api/edge/anime?filter[text]=${this.state.text}`)
-      .then(res => {
+      .then((res) => {
         const value = res.data.data;
         dispatch({
           type: "SEARCH_NAME",
-          payload: value
+          payload: value,
         });
         this.setState({
-          text: ""
+          text: "",
         });
       });
   };
@@ -32,32 +32,34 @@ class Search extends Component {
   render() {
     return (
       <Consumer>
-        {value => {
+        {(value) => {
           const { dispatch } = value;
           return (
-            <div className="jumbotron text-center">
-              <h1>AnimeDex</h1>
-              <form onSubmit={this.handleSubmit.bind(this, dispatch)}>
-                <div className="input-group">
-                  <input
-                    name="text"
-                    value={this.state.text}
-                    onChange={this.handleChange}
-                    className="form-control"
-                    size="50"
-                    placeholder="Pesquise algo aqui... "
-                    required
-                  />
-                  <div className="input-group-btn">
-                    <button
-                      onSubmit={this.handleSubmit.bind(this, dispatch)}
-                      className="btn btn-danger"
-                    >
-                      Pesquise
-                    </button>
+            <div className="jumbotron">
+              <div className="jumbotron-bg"></div>
+              <div class="jumbotron-content">
+              <h1 className="animedex-text">AnimeDex Search</h1>
+                <form onSubmit={this.handleSubmit.bind(this, dispatch)}>
+                  <div className="input-group">
+                    <div class="search-container">
+                      <input
+                        name="text"
+                        value={this.state.text}
+                        onChange={this.handleChange}
+                        className="barra-pesquisa"
+                        placeholder="Pesquise algo aqui... "
+                        required
+                      />
+                      <button
+                        onSubmit={this.handleSubmit.bind(this, dispatch)}
+                        className="botao-pesquisa"
+                      >
+                        Pesquisar
+                      </button>
+                    </div>
                   </div>
-                </div>
-              </form>
+                </form>
+              </div>
             </div>
           );
         }}

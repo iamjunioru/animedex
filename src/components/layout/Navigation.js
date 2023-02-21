@@ -19,7 +19,7 @@ class Navigation extends Component {
               </button>
               <Link to="/" className="navbar-brand">
                 {" "}
-                <img
+                <img className="icone"
                   src="https://www.pngmart.com/files/22/Kurama-PNG-Isolated-Image.png"
                   alt="Carregando..."
                   style={{ width: "190px" }}
