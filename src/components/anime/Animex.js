@@ -27,7 +27,7 @@ export default class Anime extends Component {
                         />
                         <div className="card-body text-center">
                           <p>{item.attributes.canonicalTitle}</p>
-                          <Link to={`/anime/detalhes/${item.id}`} className="btn">Detalhes</Link>
+                          <Link to={`/anime/detalhes/${item.id}`} className="btn-detalhes">Detalhes</Link>
                         </div>
                         <br />
                       </div>
