@@ -25,7 +25,7 @@ export default class Anime extends Component {
                           src={item.attributes.posterImage.large}
                           alt="Card cap"
                         />
-                        <div className="card-body text-center">
+                        <div className="card-body">
                           <p>{item.attributes.canonicalTitle}</p>
                           <Link to={`/anime/detalhes/${item.id}`} className="btn-detalhes">Detalhes</Link>
                         </div>

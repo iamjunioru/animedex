@@ -40,7 +40,7 @@ class Detail extends Component {
               alt="Card cap"
             />
             <div className="card-body">
-              <h2 className="card-title text-center mb-4">
+              <h2 className="card-title">
                 {detail.canonicalTitle}
               </h2>
               <p className="card-text">{detail.synopsis}</p>

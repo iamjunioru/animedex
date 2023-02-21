@@ -26,7 +26,7 @@ export default function About() {
             ea commodo consequat.
           </p>
           <br />
-          <button className="btn btn-default btn-lg">Botão</button>
+          <button className="btn-sobre">Botão</button>
         </div>
         <br />
         <div className="col-sm-4">

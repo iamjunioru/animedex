@@ -50,6 +50,19 @@ h2 {
   margin-left: 30px;
 }
 
+.card-title {
+    font-size: 100px;
+    color: white;
+    text-align: center;
+  }
+
+.card-body {
+  background-color: rgb(20, 20, 20);
+  color: white;
+  font-weight: bold;
+  border-radius: 10px;
+}
+
 h4 {
   font-size: 20px;
   line-height: 1.375em;
