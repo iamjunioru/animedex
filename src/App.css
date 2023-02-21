@@ -317,9 +317,25 @@ footer .glyphicon {
   left: 0;
   width: 200px; /* defina a largura da imagem */
   height: 200px; /* defina a altura da imagem */
+  animation-name: jump;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
 }
 
 .animedex-text {
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  }
+
+  @keyframes jump {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-20px);
+    }
+    100% {
+      transform: translateY(0);
+    }
   }
   
