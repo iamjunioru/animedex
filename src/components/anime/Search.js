@@ -38,7 +38,7 @@ class Search extends Component {
             <div className="jumbotron">
               <div className="jumbotron-bg"></div>
               <div class="jumbotron-content">
-              <h1 className="animedex-text">AnimeDex Search</h1>
+              <h1 className="animedex-text">AnimeDex</h1>
                 <form onSubmit={this.handleSubmit.bind(this, dispatch)}>
                   <div className="input-group">
                     <div class="search-container">

@@ -9,7 +9,7 @@ const reducer = (state, action) => {
       return {
         ...state,
         anime_list: action.payload,
-        heading: "Resultados da pesquisa:"
+        heading: "resultados"
       };
     default:
       return state;
@@ -19,7 +19,7 @@ const reducer = (state, action) => {
 export class Provider extends Component {
   state = {
     anime_list: [],
-    heading: "Os mais bem avaliados",
+    heading: "TOP 10 ANIMES",
     dispatch: action => this.setState(state => reducer(state, action))
   };
 

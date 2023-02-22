@@ -26,7 +26,6 @@ class App extends Component {
                 <Route exact path="/" component={Index} />
                 <Route exact path="/sobre" component={About} />
                 <Route exact path="/anime/detalhes/:id" component={Detail} />
-                <Redirect from="/anime/detalhes/:id" to="/anime/detail/:id" />
               </Switch>
             </div>
           </React.Fragment>

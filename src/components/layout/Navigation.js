@@ -29,7 +29,7 @@ class Navigation extends Component {
             <div className="collapse navbar-collapse" id="myNavbar">
               <ul className="nav navbar-nav navbar-right">
                 <li>
-                  <Link to="/about">SOBRE</Link>
+                  <Link to="/sobre">SOBRE</Link>
                 </li>
               </ul>
             </div>
