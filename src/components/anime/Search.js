@@ -8,15 +8,17 @@ class Search extends Component {
   };
 
   handleChange = (event) => {
+    const { name, value } = event.target;
     this.setState({
-      [event.target.name]: event.target.value,
+      [name]: value,
     });
   };
 
   handleSubmit = (dispatch, event) => {
     event.preventDefault();
+    const { text } = this.state;
     axios
-      .get(`https://kitsu.io/api/edge/anime?filter[text]=${this.state.text}`)
+      .get(`https://kitsu.io/api/edge/anime?filter[text]=${text}`)
       .then((res) => {
         const value = res.data.data;
         dispatch({
@@ -30,39 +32,34 @@ class Search extends Component {
   };
 
   render() {
+    const { text } = this.state;
     return (
       <Consumer>
-        {(value) => {
-          const { dispatch } = value;
-          return (
-            <div className="jumbotron">
-              <div className="jumbotron-bg"></div>
-              <div class="jumbotron-content">
+        {({ dispatch }) => (
+          <div className="jumbotron">
+            <div className="jumbotron-bg"></div>
+            <div className="jumbotron-content">
               <h1 className="animedex-text">AnimeDex</h1>
-                <form onSubmit={this.handleSubmit.bind(this, dispatch)}>
-                  <div className="input-group">
-                    <div class="search-container">
-                      <input
-                        name="text"
-                        value={this.state.text}
-                        onChange={this.handleChange}
-                        className="barra-pesquisa"
-                        placeholder="Pesquise algo aqui... "
-                        required
-                      />
-                      <button
-                        onSubmit={this.handleSubmit.bind(this, dispatch)}
-                        className="botao-pesquisa"
-                      >
-                        Pesquisar
-                      </button>
-                    </div>
+              <form onSubmit={(event) => this.handleSubmit(dispatch, event)}>
+                <div className="input-group">
+                  <div className="search-container">
+                    <input
+                      name="text"
+                      value={text}
+                      onChange={this.handleChange}
+                      className="barra-pesquisa"
+                      placeholder="Pesquise algo aqui... "
+                      required
+                    />
+                    <button className="botao-pesquisa">
+                      Pesquisar
+                    </button>
                   </div>
-                </form>
-              </div>
+                </div>
+              </form>
             </div>
-          );
-        }}
+          </div>
+        )}
       </Consumer>
     );
   }
