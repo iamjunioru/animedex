@@ -1,13 +1,19 @@
 import React from "react";
 
-export default () => {
+const Spinner = ({ size = 200 }) => {
   return (
-    <div>
+    <React.Fragment>
       <img
         src="https://orig00.deviantart.net/eb20/f/2005/283/c/1/throwing_star_ani.gif"
-        alt="Load..."
-        style={{ width: "200px", margin: " 40px auto", display: "block" }}
+        alt="load spinner animation fi"
+        style={{
+          display: "block",
+          margin: "auto",
+          width: `${size}px`,
+        }}
       />
-    </div>
+    </React.Fragment>
   );
 };
+
+export default Spinner;
