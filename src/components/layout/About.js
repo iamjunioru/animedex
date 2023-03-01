@@ -4,7 +4,7 @@ export default function About() {
   return (
     <div id="about" className="container-fluid">
       <div className="row">
-        <div className="col-sm-8 ">
+        <div className="col-sm-8">
           <h2>Sobre AnimeDex</h2>
 
           <h4>
@@ -28,9 +28,18 @@ export default function About() {
           <br />
           <button className="btn-sobre">Botão</button>
         </div>
-        <br />
         <div className="col-sm-4">
           <span className="glyphicon glyphicon-signal logo" />
+        </div>
+      </div>
+      <hr />
+      <div className="row">
+        <div className="col-sm-12">
+          <h2>Dupla</h2>
+          <ul>
+            <li><strong>R. Junior</strong> - Desenvolvedor Web</li>
+            <li><strong>Juan</strong> - Designer</li>
+          </ul>
         </div>
       </div>
     </div>
