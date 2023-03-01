@@ -1,44 +1,38 @@
-import React, { Component } from "react";
-import { Consumer } from "../../context";
+import React, { useContext } from "react";
+import { Context } from "../../context";
 import Spinner from "../layout/Spinner";
 import { Link } from "react-router-dom";
 
-export default class Anime extends Component {
-  render() {
-    return (
-      <Consumer>
-        {(value) => {
-          const { anime_list, heading } = value;
+export default function Anime() {
+  const { anime_list, heading } = useContext(Context);
 
-          if (anime_list === undefined || anime_list.length === 0) {
-            return <Spinner />;
-          } else {
-            return (
-              <React.Fragment>
-                <h2 className=" text-center ">{heading}</h2>
-                <div className="row">
-                  {anime_list.map((item) => (
-                    <div className="col-md-4" key={item.id}>
-                      <div className="card" style={{ width: "400px" }}>
-                        <img
-                          id="special"
-                          src={item.attributes.posterImage.large}
-                          alt="Card cap"
-                        />
-                        <div className="card-body">
-                          <p>{item.attributes.canonicalTitle}</p>
-                          <Link to={`/anime/detalhes/${item.id}`} className="btn-detalhes">Detalhes</Link>
-                        </div>
-                        <br />
-                      </div>
-                    </div>
-                  ))}
-                </div>
-              </React.Fragment>
-            );
-          }
-        }}
-      </Consumer>
-    );
+  if (!anime_list || anime_list.length === 0) {
+    return <Spinner />;
   }
+
+  return (
+    <>
+      <h2 className="text-center">{heading}</h2>
+      <div className="row">
+        {anime_list.map((item) => (
+          <div className="col-md-4" key={item.id}>
+            <div className="card" style={{ width: "400px" }}>
+              <img
+                id="special"
+                src={item.attributes.posterImage.large}
+                alt="Card cap"
+              />
+              <div className="card-body">
+                <p>{item.attributes.canonicalTitle}</p>
+                <Link to={`/anime/detalhes/${item.id}`} className="btn-detalhes">
+                  Detalhes
+                </Link>
+              </div>
+              <br />
+            </div>
+          </div>
+        ))}
+      </div>
+    </>
+  );
 }
