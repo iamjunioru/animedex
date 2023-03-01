@@ -1,5 +1,5 @@
 import React, { useContext } from "react";
-import { Context } from "../../context";
+import { Context } from "../../Context";
 import Spinner from "../layout/Spinner";
 import { Link } from "react-router-dom";
 
