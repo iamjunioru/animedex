@@ -4,12 +4,13 @@ const Spinner = ({ size = 200 }) => {
   return (
     <React.Fragment>
       <img
-        src="https://orig00.deviantart.net/eb20/f/2005/283/c/1/throwing_star_ani.gif"
+        src="https://media.tenor.com/eMdbqG7NAdkAAAAd/rasen-shuriken-anime.gif"
         alt="load spinner animation fi"
         style={{
           display: "block",
           margin: "auto",
-          width: `${size}px`,
+          width: `300px`,
+          marginTop: `50px`,
         }}
       />
     </React.Fragment>
