@@ -3,11 +3,6 @@ import axios from "axios";
 
 export const Context = React.createContext();
 
-const initialState = {
-  anime_list: [],
-  current_anime: null,
-  heading: "TOP 10 ANIMES",
-};
 
 const reducer = (state, action) => {
   switch (action.type) {
@@ -15,14 +10,7 @@ const reducer = (state, action) => {
       return {
         ...state,
         anime_list: action.payload,
-        current_anime: null,
-        heading: "Resultados",
-      };
-    case "GET_ANIME":
-      return {
-        ...state,
-        current_anime: action.payload,
-        heading: "Detalhes",
+        heading: "resultados"
       };
     default:
       return state;
@@ -31,8 +19,9 @@ const reducer = (state, action) => {
 
 export class Provider extends Component {
   state = {
-    ...initialState,
-    dispatch: action => this.setState(reducer.bind(this, this.state, action)),
+    anime_list: [],
+    heading: "TOP 10 ANIMES",
+    dispatch: action => this.setState(state => reducer(state, action))
   };
 
   componentDidMount() {
@@ -41,40 +30,21 @@ export class Provider extends Component {
       .then(res => {
         const value = res.data.data;
         this.setState({
-          anime_list: value,
+          // anime_id: value.id,
+          anime_list: value
         });
       })
-      .catch(function (error) {
+      .catch(function(error) {
         console.log(error);
       });
   }
 
-  getAnime = id => {
-    axios
-      .get(`https://kitsu.io/api/edge/anime/${id}`)
-      .then(res => {
-        const value = res.data.data;
-        this.setState({
-          current_anime: value,
-        });
-      })
-      .catch(function (error) {
-        console.log(error);
-      });
-  };
-
   render() {
     return (
-      <Context.Provider
-        value={{
-          ...this.state,
-          getAnime: this.getAnime,
-        }}
-      >
+      <Context.Provider value={this.state}>
         {this.props.children}
       </Context.Provider>
     );
   }
 }
-
 export const Consumer = Context.Consumer;
