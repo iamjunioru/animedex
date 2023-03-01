@@ -9,12 +9,13 @@ img {
   width: 95%;
   margin: 10px;
   padding: 10px;
-  border-radius: 50px; /* adiciona bordas arredondadas */
-  transition: transform 0.2s ease-in-out; /* adiciona animação de transição */
+  border-radius: 20px; /* adiciona bordas arredondadas */
+  transition: transform 0.1s ease-in-out; /* adiciona animação de transição */
 }
 
 img:hover {
   transform: scale(1.1); /* aumenta o tamanho da imagem em 10% */
+  cursor: pointer;
 }
 
 h1 {
@@ -250,7 +251,7 @@ h4 {
 .navbar-nav li a:hover,
 .navbar-nav li.active a {
   color: #f4511e !important;
-  background-color: #fff !important;
+  background-color: #ffffff !important;
 }
 
 .navbar-default .navbar-toggle {
@@ -341,13 +342,14 @@ footer .glyphicon {
   width: 200px;
   text-align: center;
   border: none;
-  border-radius: 50px;
+  border-radius: 5px;
   padding: 10px 20px;
   font-size: 20px;
   transition: all 0.2s ease-in-out;
 }
 
 .btn-detalhes:hover {
+  border-radius: 10px;
   background-color:#252525;
   color: white;
   text-decoration: none;
@@ -389,3 +391,4 @@ footer .glyphicon {
 ::-webkit-scrollbar-track {
   background-color: #f4511e
 }
+
