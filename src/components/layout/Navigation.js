@@ -32,14 +32,10 @@ export default function Navigation() {
               <Link to="/sobre">Sobre</Link>
             </li>
             <li>
-              <Link to="/2" className="nav-link">
-                Lorem
-              </Link>
+              <Link to="/2" className="nav-link">Lorem</Link>
             </li>
             <li>
-              <Link to="/3" className="nav-link">
-                Ipsum
-              </Link>
+              <Link to="/3" className="nav-link">Ipsum</Link>
             </li>
           </ul>
         </div>

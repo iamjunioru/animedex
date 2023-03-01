@@ -27,6 +27,8 @@ const App = () => {
         <Route exact path="/" component={Index} />
         <Route exact path="/sobre" component={About} />
         <Route exact path="/anime/detalhes/:id" component={Detail} />
+        <Route exact path="/2" render={() => <h1>Lorem ipsum dolor sit amet</h1>} />
+        <Route exact path="/3" render={() => <h1>Consectetur adipiscing elit</h1>} />
         <Redirect to="/" />
       </Switch>
     </div>
