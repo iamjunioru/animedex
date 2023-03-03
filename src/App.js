@@ -9,8 +9,7 @@ import About from "./components/layout/About";
 import Navigation from "./components/layout/Navigation";
 import Index from "./components/layout/Index";
 import Detail from "./components/anime/Detail.js";
-import { Provider, Consumer } from "./context";
-import Spinner from "./components/layout/Spinner";
+import { Provider } from "./context";
 import "./App.css";
 
 const App = () => {
