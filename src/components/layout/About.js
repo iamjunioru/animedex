@@ -26,7 +26,7 @@ export default function About() {
             ea commodo consequat.
           </p>
           <br />
-          <button className="btn-sobre">Botão</button>
+          <button className="btn-search">Botão</button>
         </div>
         <div className="col-sm-4">
           <span className="glyphicon glyphicon-signal logo" />

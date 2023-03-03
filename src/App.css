@@ -95,10 +95,12 @@ h2 {
 .card {
   margin: 0 10px 2rem;
   background-color: #202020;
-  border-radius: 10px;
+  border-radius: 0px;
   overflow: hidden;
+  width: 100%;
+  height: 100%;
 }
-
+/* titulo do detalhe do card */
 .card-title {
   font-size: 3rem;
   color: white;
@@ -114,8 +116,15 @@ h2 {
   text-align: center;
 }
 
+.title-body {
+  color: white;
+  text-align: center;
+  margin: 0;
+  padding-bottom: 10%;
+}
+
 .card-text {
-  margin-bottom: 1rem;
+  margin-bottom: 3rem;
 }
 
 /* estilos para o banner principal */
@@ -154,6 +163,7 @@ h2 {
   -webkit-text-stroke: 1px #fff;
   transition: transform 0.2s ease-out;
   filter: drop-shadow(0 0 23px #fff);
+  cursor: pointer;
 }
 
 /* para a seção de contatos */
@@ -187,9 +197,7 @@ h2 {
 
 /* estilos p botões */
 .barra-pesquisa {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
+  font-family: "Arial";
   font-weight: 500;
   font-size: 0.8vw;
   color: #fff;
@@ -216,9 +224,9 @@ h2 {
 .btn-search {
   margin: 10%;
   position: relative;
-  padding: 10px 20px;
+  padding: 15px 30px;
   border-radius: 7px;
-  border: 1px solid rgb(255, 136, 0);
+  border: 1px solid rgba(255, 255, 255, 0.288);
   font-size: 14px;
   text-transform: uppercase;
   font-weight: 600;
@@ -234,10 +242,12 @@ h2 {
 
 .btn-search:hover {
   background: rgb(255, 136, 0);
-  box-shadow: 0 0 30px 5px rgba(255, 123, 0, 0.815);
+  box-shadow: 0 0 25px 1px rgba(255, 123, 0, 0.815);
   -webkit-transition: all 0.2s ease-out;
   -moz-transition: all 0.2s ease-out;
   transition: all 0.2s ease-out;
+  text-decoration: none;
+  color: #ffffff;
 }
 
 .btn-search:hover::before {
@@ -247,21 +257,7 @@ h2 {
 }
 
 .btn-search::before {
-  content: "";
-  display: block;
-  width: 0px;
-  height: 86%;
-  position: absolute;
-  top: 7%;
-  left: 0%;
-  opacity: 0;
-  background: #fff;
-  box-shadow: 0 0 50px 30px #fff;
-  -webkit-transform: skewX(-20deg);
-  -moz-transform: skewX(-20deg);
-  -ms-transform: skewX(-20deg);
-  -o-transform: skewX(-20deg);
-  transform: skewX(-20deg);
+  content: "";  
 }
 
 @keyframes sh02 {
@@ -331,10 +327,20 @@ h2 {
   filter: drop-shadow(0 0 23px var(--animation-color));
 }
 
-/* nav spinner */
+/* footer */
 
-footer {
-  background-color: #141414;
-  width: 100px;
+/* heading */ 
+
+.heading {
+  color: white;
+  text-decoration: none;
+  font-size: 25px;
+  border: none;
+  background: none;
+  font-weight: 600;
+  font-family: "Arial";
 }
 
+.heading:hover {
+  color: #ff9900;
+}

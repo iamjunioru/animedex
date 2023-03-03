@@ -12,7 +12,7 @@ export default function Anime() {
 
   return (
     <>
-      <h2 className="text-heading">{heading}</h2>
+      <h2 className="heading text-center">{heading}</h2>
       <div className="row">
         {anime_list.map((item) => (
           <div className="col-md-4" key={item.id}>
@@ -23,8 +23,8 @@ export default function Anime() {
                 alt="Card cap"
               />
               <div className="card-body">
-                <p>{item.attributes.canonicalTitle}</p>
-                <Link to={`/anime/detalhes/${item.id}`} className="btn-detalhes">
+                <p className="title-body">{item.attributes.canonicalTitle}</p>
+                <Link to={`/anime/detalhes/${item.id}`} className="btn-search">
                   Detalhes
                 </Link>
               </div>
