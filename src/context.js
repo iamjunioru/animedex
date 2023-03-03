@@ -10,7 +10,7 @@ const reducer = (state, action) => {
       return {
         ...state,
         anime_list: action.payload,
-        heading: "results"
+        heading: "RESULTS"
       };
     default:
       return state;
