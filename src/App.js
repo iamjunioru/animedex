@@ -9,7 +9,7 @@ import About from "./components/layout/About";
 import Navigation from "./components/layout/Navigation";
 import Index from "./components/layout/Index";
 import Detail from "./components/anime/Detail.js";
-import { Provider } from "./context";
+import { Provider } from "./Context";
 import Footer from "./components/layout/Footer";
 
 import "./App.css";

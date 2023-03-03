@@ -25,10 +25,7 @@ export default function About() {
             ea commodo consequat.
           </p>
           <br />
-          <button
-            class="cssbuttons-io"
-            onclick="window.location.href='https://www.github.com/iamjunioru'"
-          >
+          <button class="cssbuttons-io">
             <span>
               <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                 <path d="M0 0h24v24H0z" fill="none"></path>

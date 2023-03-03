@@ -379,3 +379,13 @@ h2 {
   font-weight: 600;
   font-family: "Arial";
 }
+
+/* resultados da pesquisa */
+
+.results {
+  text-align: left;
+  margin: 10px;
+  font-size: 15px;
+  color: #303030;
+  font-weight: bold;
+}

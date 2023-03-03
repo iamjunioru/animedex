@@ -10,6 +10,8 @@
     color: ghostwhite;
     overflow: hidden;
     margin: 50px;
+    font-weight: bold;
+    text-transform: uppercase;
    }
    
    .cssbuttons-io svg {

@@ -1,10 +1,11 @@
 import React, { Component } from "react";
 import axios from "axios";
-import { Consumer } from "../../context";
+import { Consumer } from "../../Context";
 
 class Search extends Component {
   state = {
     text: "",
+    
   };
 
   handleChange = (event) => {

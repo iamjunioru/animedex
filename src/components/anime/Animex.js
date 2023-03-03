@@ -1,5 +1,5 @@
 import React, { useContext } from "react";
-import { Context } from "../../context";
+import { Context } from "../../Context";
 import Spinner from "../layout/Spinner";
 import { Link } from "react-router-dom";
 
@@ -13,6 +13,7 @@ export default function Anime() {
   return (
     <>
       <h2 className="heading text-center">{heading}</h2>
+      <h3 className="results">~ {anime_list.length} animes or movies are being displayed:</h3>
       <div className="row">
         {anime_list.map((item) => (
           <div className="col-md-4" key={item.id}>
