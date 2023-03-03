@@ -1,10 +1,10 @@
-import React, { useContext } from "react";
-import { Context } from "../../Context";
+import React, { usecontext } from "react";
+import { context } from "../../context";
 import Spinner from "../layout/Spinner";
 import { Link } from "react-router-dom";
 
 export default function Anime() {
-  const { anime_list, heading } = useContext(Context);
+  const { anime_list, heading } = usecontext(context);
 
   if (!anime_list || anime_list.length === 0) {
     return <Spinner />;

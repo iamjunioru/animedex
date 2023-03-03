@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import axios from "axios";
 
-export const Context = React.createContext();
+export const context = React.createcontext();
 
 
 const reducer = (state, action) => {
@@ -41,10 +41,10 @@ export class Provider extends Component {
 
   render() {
     return (
-      <Context.Provider value={this.state}>
+      <context.Provider value={this.state}>
         {this.props.children}
-      </Context.Provider>
+      </context.Provider>
     );
   }
 }
-export const Consumer = Context.Consumer;
+export const Consumer = context.Consumer;
