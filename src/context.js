@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import axios from "axios";
 
-export const context = React.createcontext();
+export const context = React.createContext();
 
 
 const reducer = (state, action) => {
