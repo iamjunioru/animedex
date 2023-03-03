@@ -25,6 +25,16 @@ export default function Navigation() {
               style={{ width: "190px" }}
             />
           </Link>
+          <div className="text-center navbar-brand animedex-tittle">
+            <Link to="/">
+              <button data-text="Awesome" className="animedex-tittle">
+                <span className="actual-text">&nbsp;animedex&nbsp;</span>
+                <span className="hover-text" aria-hidden="true">
+                  &nbsp;animedex&nbsp;
+                </span>
+              </button>
+            </Link>
+          </div>
         </div>
         <div className="collapse navbar-collapse" id="myNavbar">
           <ul className="nav navbar-nav navbar-right">
@@ -32,10 +42,14 @@ export default function Navigation() {
               <Link to="/sobre">Sobre</Link>
             </li>
             <li>
-              <Link to="/2" className="nav-link">Lorem</Link>
+              <Link to="/2" className="nav-link">
+                Lorem
+              </Link>
             </li>
             <li>
-              <Link to="/3" className="nav-link">Ipsum</Link>
+              <Link to="/3" className="nav-link">
+                Ipsum
+              </Link>
             </li>
           </ul>
         </div>

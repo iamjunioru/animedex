@@ -39,7 +39,7 @@ class Search extends Component {
           <div className="jumbotron">
             <div className="jumbotron-bg"></div>
             <div className="jumbotron-content">
-              <h1 className="animedex-text">AnimeDex</h1>
+              <h1 className="animedex-tittle">JUST SEARCH.</h1>
               <form onSubmit={(event) => this.handleSubmit(dispatch, event)}>
                 <div className="input-group">
                   <div className="search-container">
@@ -51,7 +51,7 @@ class Search extends Component {
                       placeholder="Pesquise algo aqui... "
                       required
                     />
-                    <button className="botao-pesquisa">
+                    <button className="btn-search">
                       Pesquisar
                     </button>
                   </div>
