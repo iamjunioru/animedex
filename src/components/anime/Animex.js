@@ -12,7 +12,7 @@ export default function Anime() {
 
   return (
     <>
-      <h2 className="text-center">{heading}</h2>
+      <h2 className="text-heading">{heading}</h2>
       <div className="row">
         {anime_list.map((item) => (
           <div className="col-md-4" key={item.id}>

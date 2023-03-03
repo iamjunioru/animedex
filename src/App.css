@@ -317,7 +317,7 @@ h2 {
   box-sizing: border-box;
   content: attr(data-text);
   color: var(--animation-color);
-  width: 108px;
+  width: 121px;
   inset: 0;
   border-right: var(--border-right) solid var(--animation-color);
   overflow: hidden;
@@ -330,3 +330,11 @@ h2 {
   width: 100%;
   filter: drop-shadow(0 0 23px var(--animation-color));
 }
+
+/* nav spinner */
+
+footer {
+  background-color: #141414;
+  width: 100px;
+}
+

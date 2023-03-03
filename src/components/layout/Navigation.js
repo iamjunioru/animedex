@@ -16,15 +16,6 @@ export default function Navigation() {
             <span className="icon-bar" />
             <span className="icon-bar" />
           </button>
-          <Link to="/" className="navbar-brand">
-            {" "}
-            <img
-              className="icone"
-              src="https://www.pngmart.com/files/22/Kurama-PNG-Isolated-Image.png"
-              alt="Carregando..."
-              style={{ width: "190px" }}
-            />
-          </Link>
           <div className="text-center navbar-brand animedex-tittle">
             <Link to="/">
               <button data-text="Awesome" className="animedex-tittle">
