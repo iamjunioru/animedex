@@ -234,6 +234,7 @@ h2 {
   max-width: 1000px;
   transition: 0.4s;
   width: 100%;
+  text-align: center;
 }
 
 .barra-pesquisa:hover {
