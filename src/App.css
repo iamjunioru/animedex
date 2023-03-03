@@ -6,6 +6,7 @@ body {
   background-color: #141414;
   margin: 0;
   padding: 0;
+  text-decoration: none;
 }
 
 /* imagens responsivas com animação de transição */
@@ -129,6 +130,7 @@ h2 {
   text-align: center;
   margin: 0;
   padding: 2rem 0;
+  text-decoration: none;
 }
 
 
@@ -146,6 +148,7 @@ h2 {
   margin: 0;
   padding-bottom: 10%;
   text-transform: uppercase;
+  text-decoration: none;
 }
 
 .card-text {
