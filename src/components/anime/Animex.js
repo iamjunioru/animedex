@@ -18,6 +18,7 @@ export default function Anime() {
           <div className="col-md-4" key={item.id}>
             <div className="card" style={{ width: "400px" }}>
               <img
+                className="card-img"
                 id="special"
                 src={item.attributes.posterImage.large}
                 alt="Card cap"

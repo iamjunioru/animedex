@@ -1,18 +1,10 @@
 import React from "react";
+import "./Spinner.css";
 
 const Spinner = ({ size = 200 }) => {
   return (
     <React.Fragment>
-      <img
-        src="https://media.tenor.com/eMdbqG7NAdkAAAAd/rasen-shuriken-anime.gif"
-        alt="load spinner animation fi"
-        style={{
-          display: "block",
-          margin: "auto",
-          width: `300px`,
-          marginTop: `50px`,
-        }}
-      />
+      <div class="spinner"></div>
     </React.Fragment>
   );
 };
