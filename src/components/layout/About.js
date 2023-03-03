@@ -37,7 +37,7 @@ export default function About() {
                   fill="currentColor"
                 ></path>
               </svg>{" "}
-              Código
+              code
             </span>
           </button>
         </div>
