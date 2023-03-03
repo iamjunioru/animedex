@@ -26,7 +26,7 @@ export default function Anime() {
               <div className="card-body">
                 <p className="title-body">{item.attributes.canonicalTitle}</p>
                 <Link to={`/anime/detalhes/${item.id}`} className="btn-search">
-                  Detalhes
+                  DETAILS
                 </Link>
               </div>
               <br />

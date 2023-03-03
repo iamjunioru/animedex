@@ -30,7 +30,7 @@ export default function Navigation() {
         <div className="collapse navbar-collapse" id="myNavbar">
           <ul className="nav navbar-nav navbar-right">
             <li>
-              <Link to="/sobre">Sobre</Link>
+              <Link to="/sobre">About</Link>
             </li>
             <li>
               <Link to="/2" className="nav-link">

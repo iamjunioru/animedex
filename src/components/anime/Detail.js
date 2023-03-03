@@ -44,8 +44,8 @@ class Detail extends Component {
           <h2 className="card-title">{detail.canonicalTitle}</h2>
           <p className="card-text">{detail.synopsis}</p>
           <h4 className="card-text">
-            <b>Avaliação</b>: {detail.averageRating}/100 <br />
-            <b>Rank de Popularidade</b> : {detail.popularityRank}
+            <b>Average</b>: {detail.averageRating}/100 <br />
+            <b>Popularity Ranking</b>: {detail.popularityRank}
           </h4>
         </div>
       </div>

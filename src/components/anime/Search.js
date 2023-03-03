@@ -48,11 +48,11 @@ class Search extends Component {
                       value={text}
                       onChange={this.handleChange}
                       className="barra-pesquisa"
-                      placeholder="Pesquise algo aqui... "
+                      placeholder="oh, search something here... "
                       required
                     />
                     <button className="btn-search">
-                      Pesquisar
+                      Search
                     </button>
                   </div>
                 </div>
