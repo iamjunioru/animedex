@@ -31,7 +31,7 @@ class Detail extends Component {
     }
 
     return (
-      <div id="detail" className="card mb-4">
+      <div id="detail" className="card-content">
         {img && (
           <img
             className="card-img-top"
@@ -43,7 +43,7 @@ class Detail extends Component {
         <div className="card-body">
           <h2 className="card-title">{detail.canonicalTitle}</h2>
           <p className="card-text">{detail.synopsis}</p>
-          <h4 className="card-text">
+          <h4 className="card-rating">
             <b>Average</b>: {detail.averageRating}/100 <br />
             <b>Popularity Ranking</b>: {detail.popularityRank}
           </h4>
