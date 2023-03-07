@@ -14,7 +14,7 @@ export default function Anime() {
     <>
       <h2 className="heading text-center">{heading}</h2>
       <h3 className="results">
-        ~ {anime_list.length} animes or movies are being displayed:
+        [ {anime_list.length} animes or movies are being displayed ]
       </h3>
       <div className="row">
         {anime_list.map((item) => (
