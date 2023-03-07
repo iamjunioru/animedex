@@ -9,7 +9,7 @@ export default function About() {
           <h2>About AnimeDex</h2>
 
           <h4>
-            just a anime search site, made with React and the Kitsu API by
+            just a anime search site, made with React and Kitsu API by
             Junior and Juan.
           </h4>
           <br />
